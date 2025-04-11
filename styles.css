@@ -1,0 +1,29 @@
+/* Custom styles for YouTube replica */
+:root {
+  --yt-spec-base-background: #0f0f0f;
+  --yt-spec-text-primary: #fff;
+  --yt-spec-text-secondary: #aaa;
+  --yt-spec-brand-button-background: #f00;
+}
+
+body {
+  background-color: var(--yt-spec-base-background);
+  color: var(--yt-spec-text-primary);
+  font-family: "Roboto", "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header-search {
+  background: #121212;
+  border: 1px solid #303030;
+  color: var(--yt-spec-text-primary);
+  padding: 8px 12px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.sidebar-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
