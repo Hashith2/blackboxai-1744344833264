@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="fixed top-0 w-full bg-[#0f0f0f] z-50 flex items-center justify-between px-4 py-2">
+        <div class="flex items-center gap-4">
+            <button class="p-2 hover:bg-[#272727] rounded-full">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <a href="/" class="flex items-center">
+                <i class="fab fa-youtube text-red-600 text-3xl mr-1"></i>
+                <span class="text-white font-medium text-xl">YouTube</span>
+            </a>
+        </div>
+        
+        <div class="flex-1 max-w-[720px] mx-4">
+            <div class="flex">
+                <input type="text" placeholder="Search" class="header-search flex-1">
+                <button class="bg-[#272727] px-6 rounded-r-full border-l-0 border border-[#303030]">
+                    <i class="fas fa-search text-white"></i>
+                </button>
+                <button class="ml-4 p-2 hover:bg-[#272727] rounded-full">
+                    <i class="fas fa-microphone text-white"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="flex items-center gap-2">
+            <button class="p-2 hover:bg-[#272727] rounded-full">
+                <i class="fas fa-video text-white"></i>
+            </button>
+            <button class="p-2 hover:bg-[#272727] rounded-full">
+                <i class="fas fa-bell text-white"></i>
+            </button>
+            <button class="ml-2 px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600">
+                <i class="fas fa-user mr-2"></i>Sign in
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="flex pt-14">
+        <!-- Sidebar -->
+        <aside class="fixed left-0 top-14 w-64 h-screen bg-[#0f0f0f] overflow-y-auto">
+            <div class="p-3">
+                <a href="#" class="flex items-center p-2 rounded-lg hover:bg-[#272727] sidebar-item">
+                    <i class="fas fa-home mr-6 text-white"></i>
+                    <span class="text-white">Home</span>
+                </a>
+                <a href="#" class="flex items-center p-2 rounded-lg hover:bg-[#272727] sidebar-item">
+                    <i class="fas fa-play mr-6 text-white"></i>
+                    <span class="text-white">Shorts</span>
+                </a>
+                <a href="#" class="flex items-center p-2 rounded-lg hover:bg-[#272727] sidebar-item">
+                    <i class="fas fa-subscription mr-6 text-white"></i>
+                    <span class="text-white">Subscriptions</span>
+                </a>
+                <hr class="my-3 border-[#272727]">
+                <a href="#" class="flex items-center p-2 rounded-lg hover:bg-[#272727] sidebar-item">
+                    <i class="fas fa-clock-rotate-left mr-6 text-white"></i>
+                    <span class="text-white">History</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="ml-64 flex-1 bg-[#0f0f0f] min-h-screen p-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+                <!-- Video Cards -->
+                <div class="rounded-xl overflow-hidden">
+                    <div class="aspect-video bg-[#272727]"></div>
+                    <div class="p-3">
+                        <h3 class="text-white font-medium">Video Title</h3>
+                        <p class="text-[#aaa] text-sm mt-1">Channel Name</p>
+                        <p class="text-[#aaa] text-sm">123K views • 2 hours ago</p>
+                    </div>
+                </div>
+                <!-- Repeat video cards -->
+                <div class="rounded-xl overflow-hidden">
+                    <div class="aspect-video bg-[#272727]"></div>
+                    <div class="p-3">
+                        <h3 class="text-white font-medium">Video Title</h3>
+                        <p class="text-[#aaa] text-sm mt-1">Channel Name</p>
+                        <p class="text-[#aaa] text-sm">123K views • 2 hours ago</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden">
+                    <div class="aspect-video bg-[#272727]"></div>
+                    <div class="p-3">
+                        <h3 class="text-white font-medium">Video Title</h3>
+                        <p class="text-[#aaa] text-sm mt-1">Channel Name</p>
+                        <p class="text-[#aaa] text-sm">123K views • 2 hours ago</p>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden">
+                    <div class="aspect-video bg-[#272727]"></div>
+                    <div class="p-3">
+                        <h3 class="text-white font-medium">Video Title</h3>
+                        <p class="text-[#aaa] text-sm mt-1">Channel Name</p>
+                        <p class="text-[#aaa] text-sm">123K views • 2 hours ago</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
